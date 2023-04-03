@@ -20,6 +20,11 @@ a {
 ul {
     list-style: none;
 }
+input,
+button {
+    outline: none;
+    border: none;
+}
 .button {
     display: flex;
     justify-content: center;
@@ -136,33 +141,6 @@ ul {
     border-radius: 8px;
     padding: 8px 17px;
 }
-@media screen and (max-width: 767.98px) {
-    .tour-list {
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: 320px;
-        overflow-x: auto;
-        padding: 0 30px 30px;
-        scroll-snap-type: x mandatory;
-        scroll-snap-stop: always;
-    }
-    .tour-item {
-        scroll-snap-align: center;
-    }
-}
-@media screen and (max-width: 1023.98px) {
-    .tour-image {
-        height: 210px;
-    }
-    .tour-content {
-        padding: 14px 14px 14px 14px;
-    }
-    .tour-title {
-        font-size: 16px;
-        margin-bottom: 18px;
-    }
-}
-
 
 /* Popular Things */
 .popular {
@@ -242,18 +220,6 @@ ul {
     background: linear-gradient(24.19deg, rgba(4, 4, 4, 0.52) 0.23%, rgba(4, 4, 4, 0) 55.52%);
     /* border-radius: 14px 14px 0 0; */
 }
-
-@media screen and (max-width: 1023.98px) {
-    .popular-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media screen and (max-width: 767.98px) {
-    .popular-list {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 /* GEMS */
 .gems {
@@ -396,4 +362,81 @@ ul {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+}
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 100rem;
+    border: 2px solid #E6E8EC;
+    padding: 8px;
+}
+.subscribe-email {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #606269;
+    padding-left: 18px;
+    width: 100%;
+}
+.subscribe-email::-webkit-input-placeholder {
+    color: #B1B5C4;
+}
+.subscribe-button {
+    width: 33px;
+    height: 33px;
+    background: #3B71FE;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+
+@media screen and (max-width: 767.98px) {
+    .tour-list {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 320px;
+        overflow-x: auto;
+        padding: 0 30px 30px;
+        scroll-snap-type: x mandatory;
+        scroll-snap-stop: always;
+    }
+    .tour-item {
+        scroll-snap-align: center;
+    }
+    .popular-list {
+        grid-template-columns: 1fr;
+    }
+    .gems-list {
+        grid-template-rows: 200px 200px 160px;
+        gap: 10px;
+    }
+    .golds-list {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 220px);
+        gap: 15px;
+    }
+    .gold-item {
+        padding: 10px;
+        border-radius: 12px;
+    }
+}
+@media screen and (max-width: 1023.98px) {
+    .popular-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tour-image {
+        height: 210px;
+    }
+    .tour-content {
+        padding: 14px 14px 14px 14px;
+    }
+    .tour-title {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
 }
