@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check box</title>
+</head>
+<style>
+    .checkbox-label {
+        cursor: pointer;
+    }
+    .checkbox-custom {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #e6e8ec;
+        border-radius: 8px;
+        color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .checkbox-default {
+        display: none;
+    }
+    .checkbox-default:checked + .checkbox-custom {
+        background-color: #3472ec;
+        border-color: #3472ec;
+        color: #FFFFFF;
+    }
+</style>
+<body>
+    <label class="checkbox-label" for="checkbox1">
+        <input type="checkbox" name="" id="checkbox1" class="checkbox-default">
+        <div class="checkbox-custom">
+            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.7172 0.16899C7.49188 -0.0563299 7.1539 -0.0563299 6.92858 0.16899L2.70384 4.39373L0.957608 2.64751C0.732289 2.42219 0.394309 2.42219 0.16899 2.64751C-0.0563299 2.87283 -0.0563299 3.21081 0.16899 3.43612L2.30953 5.57666C2.42219 5.68932 2.53485 5.74565 2.70384 5.74565C2.87283 5.74565 2.98549 5.68932 3.09814 5.57666L7.7172 0.957609C7.94252 0.732289 7.94252 0.394309 7.7172 0.16899Z" fill="currentColor"/>
+            </svg>                
+        </div>
+    </label>
+</body>
+</html>
