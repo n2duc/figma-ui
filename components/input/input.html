@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    .search {
+        max-width: 500px;
+        margin: 25px auto;
+        position: relative;
+    }
+    .search-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+    }
+    .search-input {
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid transparent;
+        outline: none;
+        background-color: #fafafa;
+        border-radius: 8px;
+        padding: 15px;
+        padding-left: 55px;
+        transition: all 0.2s linear;
+    }
+    .search-input:focus {
+        border-color: #2979ff;
+        background-color: transparent;
+    }
+
+    .input-style {
+        position: relative;
+        max-width: 500px;
+        margin: 25px auto;
+    }
+    .input-style span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+        color: #333;
+        background-color: #FFFFFF;
+        font-size: 14px;
+        pointer-events: none;
+        transition: all 0.1s linear;
+    }
+    .input-style input {
+        display: block;
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid transparent;
+        outline: none;
+        background-color: #fafafa;
+        border-radius: 8px;
+        padding: 15px;
+        transition: all 0.2s linear;
+    }
+    .input-style input:focus {
+        border-color: #F62682;
+        background-color: transparent;
+    }
+    .input-style input:not(:placeholder-shown) + span,
+    .input-style input:focus + span {
+        top: 0;
+        left: 10px;
+        background-color: #FFFFFF;
+        display: inline-block;
+        padding: 5px;
+    }
+</style>
+<body>
+    <div class="search">
+        <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.49819 17.8504C2.16727 14.4532 2.16727 8.94516 5.49819 5.54793C8.8291 2.15069 14.2296 2.15069 17.5605 5.54793C20.605 8.65304 20.8668 13.5215 18.3459 16.9299L21.7105 20.3615C22.5882 21.2567 21.2721 22.5994 20.3942 21.7052L20.3942 21.7052L17.0693 18.3141C13.7182 21.2399 8.66994 21.0853 5.49819 17.8504ZM16.2436 6.89103C13.64 4.23554 9.41864 4.23554 6.815 6.89103C4.21136 9.54651 4.21136 13.8519 6.815 16.5074C9.41864 19.1629 13.64 19.1629 16.2436 16.5074C18.8473 13.8519 18.8473 9.54651 16.2436 6.89103Z" fill="#A6A7B2"/>
+        </svg>
+        <input type="text" class="search-input" placeholder="Enter your filter">
+    </div>
+    <div class="input-style">
+        <input type="text" placeholder=" ">
+        <span>Enter your mail</span>
+    </div>
+</body>
+</html>

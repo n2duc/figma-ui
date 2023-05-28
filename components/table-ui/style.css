@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+.table {
+    margin-top: 50px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th,
+table td {
+    text-align: left;
+    vertical-align: middle;
+}
+table td {
+    padding: 25px 0;
+}
+table tr {
+    border-bottom: 1px solid #E4E4E4;
+}
+table th {
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #A6A7B2;
+    padding-bottom: 25px;
+}
+table .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+table .user-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 100rem;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+table td .follow {
+    height: 26px;
+    color: #FFFFFF;
+    background: #FF754C;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    padding: 0 16px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+table .badge {
+    height: 26px;
+    padding: 0 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFA2C0;
+    background: #FFF6F9;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
