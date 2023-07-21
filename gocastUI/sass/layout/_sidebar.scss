@@ -27,6 +27,9 @@
         margin-bottom: 10px;
         padding-left: 21px;
     }
+    &-icon {
+        flex: 0 0 24px;
+    }
     &-link {
         display: flex;
         align-items: center;
@@ -40,6 +43,14 @@
         &:hover {
             background: linear-gradient(92.29deg, #415EF4 0.33%, #7141EF 28.14%);
             color: white;
+            [fill^="#E5"] {
+                fill: white;
+                opacity: 1;
+            }
+            [fill^="#A5"] {
+                mix-blend-mode: normal;
+                fill: hsl(var(--primary-h), calc(var(--primary-s) + 1%), calc(var(--primary-s) + 16%));
+            }
         }
     }
 }

@@ -1,3 +1,20 @@
 @mixin bg($value: white) {
     background-color: $value;
 }
+@mixin placeholder($color: white) {
+    &::-webkit-input-placeholder{
+        color: $color;
+    }
+    &::-moz-input-placeholder{
+        color: $color;
+    }
+}
+@mixin size($width: 0, $height: $width) {
+    width: $width;
+    height: $height;
+}
+@mixin cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
